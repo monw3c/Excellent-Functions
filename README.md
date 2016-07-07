@@ -14,3 +14,10 @@ window.$ = function(selector, context, undefined) {
 	return ((el.length < 2) ? el[0]: el);
 };
 ```
+
+```js
+window.uuid: function() {
+	return "xxx-" + Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15)
+}
+	
+```
