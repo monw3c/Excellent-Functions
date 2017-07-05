@@ -48,6 +48,6 @@ addHandler: function( types, handler ) {
 },
 
 removeHandler: function( types ) {
-            basket.addHandler( types, undefined );
+            this.addHandler( types, undefined );
 }
 ```
