@@ -36,3 +36,18 @@ MyArray.prototype.length = 0;
 var mine = new MyArray();
 mine.push(1, 2, 3);
 ```
+
+```js
+addHandler: function( types, handler ) {
+            if( !Array.isArray( types ) ) {
+                types = [ types ];
+            }
+            types.forEach( function( type ) {
+                handlers[ type ] = handler;
+            });
+},
+
+removeHandler: function( types ) {
+            basket.addHandler( types, undefined );
+}
+```
