@@ -51,3 +51,29 @@ removeHandler: function( types ) {
             this.addHandler( types, undefined );
 }
 ```
+
+```js
+function isObjectValueEqual(a, b) {
+	//判断两个对象是否相等
+        var aProps = Object.getOwnPropertyNames(a);
+        var bProps = Object.getOwnPropertyNames(b);
+	
+	if(a===b){
+	    return true;
+	}
+
+        if (aProps.length != bProps.length) {
+            return false;
+        }
+
+        for (var i = 0; i < aProps.length; i++) {
+            var propName = aProps[i];
+
+            if (a[propName] !== b[propName]) {
+                return false;
+            }
+        }
+
+        return true;
+}
+```
