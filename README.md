@@ -77,3 +77,10 @@ function isObjectValueEqual(a, b) {
         return true;
 }
 ```
+
+```js
+function validate(mobile) {
+    const VALIDATE_REG = /^(0|86|17951)?(13[0-9]|15[012356789]|166|17[0-9]|18[0-9]|14[57]|19[89])[0-9]{8}$/;
+    return VALIDATE_REG.test(mobile); 
+}
+```
